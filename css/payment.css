@@ -1,0 +1,176 @@
+
+body{
+    box-sizing: border-box;
+    background-color: #efefef; 
+}
+
+.container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+}
+
+ .heading{
+    font-family: "Amazon Ember",Arial,sans-serif;
+    position: relative;
+    font-size: 1.17rem;
+    font-weight: bold;
+    top: -19rem;
+    left: 14.2rem;
+    color: #C45500;
+}
+
+.wrapper{
+    height: 39.7rem;
+    width: 49rem;
+    margin: 4rem 8rem 0 0;
+    border: 1px solid #e4e4e4;
+    box-sizing: border-box;
+    border-radius: 0.8rem;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0F1111;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    box-shadow: 0px 22px 58px -15px rgba(0,0,0,.15);
+    background-color: white;
+} 
+
+.first {
+        margin: 2rem 0 0 2rem;
+}
+
+img{
+    width: 48.5rem;
+    height: 2rem;
+    margin: -.5rem 0 0 0;
+    cursor: pointer;
+}
+.op1{
+    position: relative;
+    top: -2rem;
+    left: 1.6rem;
+}
+
+.info{
+    position: relative;
+    color: rgb(42 42 42);
+    font-weight: 100;
+    top: -1.5rem;
+    left: 3.6rem;
+}
+
+.second{
+    position: relative;
+    top: 4.8rem;
+    left: 2rem;
+
+}
+
+.epay{
+    width: 2.3rem;
+    height: 2.3rem;
+    position: relative;
+    top: 4rem;
+    left: 3.6rem;
+}
+
+.ppay{
+    position: relative;
+    left: 5.2rem;
+}
+
+.ptmpay{
+    position: relative;
+    left: 7rem;
+    width: 2.8rem;
+}
+
+.op2{
+    position: relative;
+    top: -2rem;
+    left: 1.6rem;
+}
+
+.info2{
+    position: relative;
+    color: rgb(42 42 42);
+    font-weight: 100;
+    top: 4.5rem;
+    left: 3.6rem;
+}
+
+#input{    
+    height: 2rem;
+    width: 10.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid #2c2c2c;
+    position: relative;
+    top: 4.5rem;
+    left: 3.6rem;
+    padding: 0 0 0 0.5rem;
+    font-size: .94rem;
+}
+
+.verify{
+    position: relative;
+    top: 4.45rem;
+    left: 4.1rem;
+    width: 4rem;
+    height: 2.25rem;
+    border-radius: 0.6rem;
+    border: none;
+    background-color: #ffe500;
+    cursor: pointer;
+    font-family: "Amazon Ember",Arial,sans-serif;
+
+}
+
+.verify:hover{
+       background-color: #eed80c;
+}
+
+.third{
+    position: relative;
+    top: 9rem;
+    left: 2rem;
+}
+
+
+.op3{
+    position: relative;
+    top: -2rem;
+    left: 1.6rem;;
+}
+
+.info3{
+    position: relative;
+    color: rgb(42 42 42);
+    font-weight: 100;
+    top: 7rem;
+    left: 3.6rem;
+}
+
+
+.btn-pay{
+    position: relative;
+    top: 9.4rem;
+    left: 2.3rem;
+    width: 12rem;
+    height: 2.3rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-weight: 600;
+    background-color: #ffe815;
+
+}
+
+.btn-pay a{
+     text-decoration: none;
+     color: black;
+}
+
+.btn-pay:hover{
+    background-color: #efd90d;
+}
