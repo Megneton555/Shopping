@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Registration</title>
         <link rel="stylesheet" href="../css/login_reg.css">
+        <script  defer src="../js/validation.js"></script>
         <script src="https://kit.fontawesome.com/33fa74657a.js" crossorigin="anonymous"></script>
            
     </head>
@@ -24,23 +25,35 @@
                     </div>
                     <div class="content-form">
                         <div class="y-style">
-                         <form action="" method="POST" autocomplete="off">
+                         <form action="login.html" method="POST" id="form">
                                 <p> 
                                     <label>Full Name</label>
                                     <input type="text" name="name" placeholder="Enter your name" required="">
+                        
                                 </p>
                                 <p> 
                                     <label>Email</label>
                                     <input type="email" name="email"  placeholder="Enter your email"  required="">
+                                
                                 </p>
+
+                                <p> 
+                                    <label>Mobile</label>
+                                    <input type="number" name="num"   placeholder="Enter Mobile number"  required="" pattern="[0-9]" inputmode="numeric">
+                                    
+                                </p>
+
                                 <p> 
                                     <label>Password</label>
-                                    <input type="password" name="pass"  minlength="5" placeholder="Enter password "  required="">
+                                    <input type="password" name="pass"  minlength="5" placeholder="Enter password "  required="" id="pass1">
+                                  
                                 </p>
                                 
                                 <p> 
                                     <label>Confirm Password</label>
-                                    <input type="password" name="cpass"  placeholder="Re-enter your password"  required="">
+                                    <input type="password" name="cpass"  placeholder="Re-enter your password"  required="" id="pass2">
+                                    <div id="error"></div>
+                                    <div id="sucess"></div>
                                 </p>
                                 
                                 
@@ -48,10 +61,10 @@
                             </form>
                             <p class="second"><span>Or sign up with</span></p>
                             <div class="social-media">
-                                <a class="ig" href="" ><i class="fa-brands fa-instagram"></i></a>
-                                <a class="fb" href="" ><i class="fa-brands fa-facebook-f" ></i></a>
-                                <a class="tw" href="" ><i class="fa-brands fa-twitter" ></i></a>
-                                <a class="gg" href="" ><i class="fa-brands fa-google" ></i></a>
+                                <a class="ig" href="#" ><i class="fa-brands fa-instagram"></i></a>
+                                <a class="fb" href="#" ><i class="fa-brands fa-facebook-f" ></i></a>
+                                <a class="tw" href="#" ><i class="fa-brands fa-twitter" ></i></a>
+                                <a class="gg" href="#" ><i class="fa-brands fa-google" ></i></a>
                               </div>
                             <div class="afterform">
                                 <p>Already have an account?</p>
@@ -64,6 +77,6 @@
              </div>
             </div>
         </div>
- 
+     
     </body>
 </html>

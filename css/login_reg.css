@@ -343,7 +343,7 @@ form :is(p, label) a:hover, .afterform1 a:hover{
     .content-form::before{
         content: '';
         position: absolute;
-        height: 65rem;
+        height: 70rem;
         width: 51em;
         right: -12rem;
         background-color: white;
@@ -542,4 +542,28 @@ form :is(p, label) a:hover, .afterform1 a:hover{
 
 .second{
     text-align: center;
+}
+input[type="number"]::-webkit-inner-spin-button{
+    display: none;
+}
+
+input:focus{
+    outline: 3px;
+}
+
+
+#error{
+    height: 0px;
+    color: #ff3860;
+    font-size: 12px;
+    position: relative;
+    bottom: 1rem;
+}
+
+#sucess{
+    height: 0px;
+    color: #09c372;
+    font-size: 12px;
+    position: relative;
+    bottom: 1rem;
 }
