@@ -1,64 +1,45 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Poppins:wght@400;700&display=swap');
 
 :root {
     --main-color:#AD4328;
     --dark-color:#11152a;
     --light-color:#d0d4ed;
-
 }
 
- *{
+*{
     margin:0;
     padding:0;
 }
-
 
 *, ::before, ::after{
     box-sizing: border-box;
 }
 
-
 body{
-      font-family: 'Poppins', sans-serif;
-      font-size:14px;
-      font-weight:400;
-      line-height:1.8;
-      color:var(--dark-color);
-      background-color: #efefef;
-     }
-
-
-
-     
+    font-family: 'Poppins', sans-serif;
+    font-size:14px;
+    font-weight:400;
+    line-height:1.8;
+    color:var(--dark-color);
+    background-color: #efefef;
+}
 
 a {
     text-decoration:none;
 }
-
-
-
-
-
 
 h2{
     font-size: 3em;
     font-weight:400;
     line-height:1.2;
     color:white;
-    margin-bottom:20px;
 }
 
-
-
 .container{
-        max-width:1100px;
-        margin: 0 auto;
-        }
+    max-width:1100px;
+    margin: 0 auto;
+}
     
-    
-    
-
 .wrapper>div {
     display: flex;
     flex-direction: column;
@@ -69,32 +50,24 @@ h2{
     background-color: var(--main-color);
     overflow: hidden;
     box-shadow:rgba(0, 0, 0, 0.45) 0 25px 20px -20px;
-  
 }
   
+:is(.login)> div{
+    position:relative;
+    flex: 1 0 50%;
+    padding: 50px 70px 50px 40px;
+}
 
-
-
-    :is(.login, .signup)> div{
-        position:relative;
-        flex: 1 0 50%;
-        padding: 60px;
-    }
-
-
-
-
+:is(.signup)> div {
+    position: relative;
+    flex: 1 0 50%;
+    padding: 75px 60px 60px;
+}   
 
 .content-heading .y-style {
     display:flex;
     flex-direction:column;
 }
-
-
-
-
-
-
 
 .content-form .y-style .input_fieid .custom_select select{
     border:1px solid #d5dbd9;
@@ -108,74 +81,56 @@ h2{
     
 }
 
-
-
-
-
-
-
-    .logo a{
-        display: inline-block;
-        margin-bottom:60px;
-        font-size:18px;
-        font-weight: 700;
-        color: var(--dark-color);
-    }
-
-
-
-   
-
-    .logo span{
-        color:#f8f4f6;
-    }
-
-    
-    
-
-
-
-  
-
-   .content-heading p{
-    color: var(--light-color);
-
+.y-style{
+    position:relative;
+    transform: translate3d(0, 20%, 0);
+    animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1)both;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    z-index: 9999;
 }
 
+.y-style{
+    transform: translate3d(0,0,0);
+}
 
+.logo a{
+    display: inline-block;
+    margin-bottom:60px;
+    font-size:18px;
+    font-weight: 700;
+    color: var(--dark-color);
+}
 
+.logo span{
+    color:#f8f4f6;
+}
 
+.content-heading p{
+    color: var(--light-color);
+}
 
+.content-form{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
 
+.content-form::before{
+    content: '';
+    position: absolute;
+    height: 70rem;
+    width: 51em;
+    right: -11rem;
+    background-color: white;
+    clip-path: polygon(40% 0, 100% 0%, 100% 100%, 40% 100%, 0% 50%);
+    animation: slideforward 1s ease 1 forwards;
+}
 
-    
-
-     .content-form{
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        margin-top: 2rem;
-    
-    }
-    
-
-
-
-
-
-
-
-    
 .welcome{
     text-align:center;
 }
-
-
-
-
-
-        
-  
 
 form input:not(#terms,#remember){
     font-family:inherit;
@@ -187,272 +142,112 @@ form input:not(#terms,#remember){
     border: 1px solid var(--light-color);
 }
 
-
-
-
-
-
-   
-
-   form input::placeholder{
+form input::placeholder{
     color:var(--light-color);
 }
 
-
-
-
-
-
-
-  
-
-  form button{
-    background-color:#ea123a;
-    color:white;
-    width:100%;
-    margin:23px 0;
-    border:0;
-    line-height:42px;
-    border-radius:7px;
-    font-weight:700;
-    cursor:pointer;
-    transition:all .3s ease-out;
-    /* -webkit-transition: all .3s ease-out; */
+form button{
+  background-color:#ea123a;
+  color:white;
+  width:100%;
+  margin:23px 0;
+  border:0;
+  line-height:42px;
+  border-radius:7px;
+  font-weight:700;
+  cursor:pointer;
+  transition:all .3s ease-out;
 }
 
-
-
-
-
- 
-
-    button:hover{
-        background-color:var(--dark-color);
-    }
+button:hover{
+    background-color:var(--dark-color);
+}
     
-    
-    
-    
-
 p span{
-    position: relative;
     color: #979797;
-    top: 1.8rem;
 }
-
-.sign span{
-    position: relative;
-    top: 1rem;
-    left: -5px;
-    color: #979797;
-
-}
-    
-
 
 .afterform{
     text-align: center;
-    margin-top: 44px;
 }
 
-
-
-
-
-.afterform1{
-    text-align: center;
-    margin-top: 34px;
-    position: relative;
-    top: .5rem;
-    right: .5rem;
-   
+input[type="number"]::-webkit-inner-spin-button{
+    display: none;
 }
 
+input:focus{
+    outline: 3px;
+}
 
-
-
-    
-
-    form .check{
-        position:relative;
-        font-size:12px;
-        float:left;
-        top: 3px;
-    }
-    
-
-
-
-        
-
+form .check{
+    position:relative;
+    font-size:12px;
+    float:left;
+    top: 3px;
+}
 
 form .check input{
     position:absolute;
     left: 56px;
     top:5px;
-
+    
 }
 
-
-
-   
-    form .forgot{
-        float:right;
-        font-size:12px;
-        cursor: pointer;
-        position: relative;
-        top: 3px;
-    }
+form .forgot{
+    float:right;
+    font-size:12px;
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+}
     
-    form .forgot:hover{
-        color: #AD4328;
-    }
+form .forgot:hover{
+    color: #AD4328;
+}
   
 
-  form label a, .afterform a{
+form label a, .afterform a{
     color:var(--main-color);
 }
-
-
-
-
 
 form label a, .afterform1 a{
     color:var(--main-color);
 }
 
-
-  
-
-
-   form :is(p, label) a:hover, .afterform a:hover{
+form :is(p, label) a:hover, .afterform a:hover{
     border-bottom: 1px dotted;
 }
-
-
 
 form :is(p, label) a:hover, .afterform1 a:hover{
     border-bottom: 1px dotted;
 }
 
-
-
-
-   
-
-    .content-form::before{
-        content: '';
-        position: absolute;
-        height: 70rem;
-        width: 51em;
-        right: -12rem;
-        background-color: white;
-        clip-path: polygon(40% 0, 100% 0%, 100% 100%, 40% 100%, 0% 50%);
-        animation: slideforward 1s ease 1 forwards;
-    }
-    
-
-
-
-
-    
-
-    @keyframes slideforward{
-        0%{
-            opacity: 0;
-            transform: translate3d(120%, 0, 0);
-        }
-        100%{
-            opacity: 1;
-        }
-    }
-       
-
-
-
-
-    
-        
-
-.y-style{
-    position:relative;
-    transform: translate3d(0, 20%, 0);
-    /* -webkit-transform: translate3d(0, 20%, 0); */
-    animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1)both;
-    /* -webkit-animation: fade-in 0.9s cubic-bezier(0.39, 0.575, 0.565, 1)both; */
-
-
+#number,#password,#confirmpass{
+    height: 0;
+    position: relative;
+    bottom: 23px;
+    left: 0.3rem;
+    font-size: 13px;
+    font-family: inherit;
+    color: red;
 }
 
-
-
-
-@keyframes fade-in{
-    from {
-        opacity:0;
-        transform: translate3d(0, 20%, 0);
-    }
-    to {
-        opacity:1;
-    }
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
 }
 
-
-
-.y-style{
-    transform: translate3d(0,0,0);
+.sign{
+    text-align: center;
 }
-
-
-  
-
-    @media screen and (min-width: 768px){
-        .wrapper>div {
-            flex-direction:row;
-            max-width:800px;
-        }
-        
-
-   
-
- .signup   .content-heading .y-style{
-    height:100%;
-    justify-content: space-between;
-}
- 
-
-
-
-
-
-  
-  .welcome{
-    text-align:left;
-    margin:19em 0 auto;
-}
-
-
-
-   
-
-@keyframes move{
-        from {
-            opacity:0;
-            transform:translate3d(0, -100%, 0);
-        }
-        to{
-            opacity:1;
-        }
-    }
-}
-
 
 .social-media{
-    position: relative;
-    top: 2.8rem;
-    left: 1.65rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 
 .social-media a {
     display: inline-flex;
@@ -467,10 +262,8 @@ form :is(p, label) a:hover, .afterform1 a:hover{
     font-size: 1.1rem;
     color: #AD4328;
     text-decoration: none;
-    margin: -17px 15px 30px 0;
+    margin-right: 15px;
     transition: all 0s ease;
-
-
 }
 
 .ig:hover{
@@ -496,74 +289,91 @@ form :is(p, label) a:hover, .afterform1 a:hover{
     color: white;
     border: 2px solid #EA4335;
 }
-
-
-.welcome2{
-           position: relative;
-           top: -5rem;
-
-        }
-
-
-.second{
-    position: relative;
-    top: -1rem;
-
+    
+@keyframes slideforward{
+    0%{
+        opacity: 0;
+        transform: translate3d(120%, 0, 0);
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
-.social-media2{
-    position: relative;
-    top: 2.8rem;
-    left: 1.5rem;
+@keyframes fade-in{
+    from {
+        opacity:0;
+        transform: translate3d(0, 20%, 0);
+    }
+    to {
+        opacity:1;
+    }
 }
 
+@media screen and (min-width: 768px){
+    .wrapper>div {
+        flex-direction:row;
+        max-width:800px;
+    }
 
-.social-media2 a {
-    display: inline-flex;
+    .signup   .content-heading .y-style{
+    height: 100%;
     justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid #AD4328;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
-    font-size: 1.1rem;
-    color: #AD4328;
-    text-decoration: none;
-    margin: -17px 15px 30px 0;
-    transition: all 0s ease;
+    row-gap: 6rem;
+    }
+ 
+    .welcome{
+    text-align:left;
+    margin:21em 0 auto;
+    }
 }
 
+@media only screen and (max-width: 768px){
 
-.sign{
-    text-align: center;
-}
+    .container {
+        margin: 0 .5rem;
+    }
 
-.second{
-    text-align: center;
-}
-input[type="number"]::-webkit-inner-spin-button{
-    display: none;
-}
+    :is(.login)> div {
 
-input:focus{
-    outline: 3px;
-}
+        position: relative;
+        flex: 1 0 50%;
+        padding: 60px;
+    }
 
+    .content-heading .y-style {
+        gap: 0;
+    }
 
-#error{
-    height: 0px;
-    color: #ff3860;
-    font-size: 12px;
-    position: relative;
-    bottom: 1rem;
-}
+    .content-form::before{
+        content: '';
+        position: absolute;
+        height: 45em;
+        width: 100%;
+        left: 0;
+        background-color: white;
+        clip-path: polygon(50% 0%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+        animation: fadedown 1s ease 1 forwards;
+    }
 
-#sucess{
-    height: 0px;
-    color: #09c372;
-    font-size: 12px;
-    position: relative;
-    bottom: 1rem;
+    .signup-form::after{
+        content: '';
+        position: absolute;
+        height: 61em;
+        width: 100%;
+        left: 0;
+        background-color: white;
+        clip-path: polygon(50% 0%, 100% 8%, 100% 100%, 0 100%, 0 8%);
+        animation: fadedown 1s ease 1 forwards;
+    }
+
+    @keyframes slideforward{
+        0%{
+            opacity: 0;
+            transform: translateY(100%);
+        }
+        100%{
+            opacity: 1;
+        }
+    }
 }

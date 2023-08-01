@@ -18,8 +18,10 @@
 *{
     font-family:  'Poppins', sans-serif;
     font-weight: 700;
-    margin: 0; padding: 0;
-    outline: none; border: none;
+    margin: 0; 
+    padding: 0;
+    outline: none; 
+    border: none;
     box-sizing: border-box;
     text-transform: capitalize;
     text-decoration: none;
@@ -29,14 +31,11 @@
 ::after,::before{
     box-sizing: border-box;
 }
-/*           header section                */
-
-
-/* modefying scrollbar  */
 
 html::-webkit-scrollbar{
     width: 0;
 }
+
 html::-webkit-scrollbar-track{
     background-color: var(--white);
 }
@@ -49,8 +48,6 @@ section{
     padding: 9rem 10% 0;
 }
 
-
-/* headre section  */
 .header{
     height: 3rem;
     position: fixed;
@@ -66,9 +63,6 @@ section{
     box-shadow: var(--box-shadow);
 }
 
-    /* body sectiom */
-
-
 .main{
     margin-top: -12rem;
 }
@@ -78,8 +72,6 @@ section{
     grid-template-columns: repeat(auto-fit, minmax(13.7rem,auto));
     gap: 2rem;
 }
-
-
 
 .main .container .shop{
     padding: 2rem 1.3rem;
@@ -96,9 +88,6 @@ section{
     width: 14rem;
     height: 15rem;
 }
-
-
-
 
 .main .container .shop:hover{
     box-shadow: var(--box-shadow-2);
@@ -121,10 +110,8 @@ section{
     background-color: var(--black);
     background-color: var(--button-color);
     color: white;
-    transition: all .3s ease-out;
-    
+    transition: all .3s ease-out; 
 }
-
 
 .main .container .shop button:hover{
     background-color: grey ;
@@ -148,7 +135,6 @@ section{
     background-color: white;
     padding: .6.3rem;
 }
-
 
 .pr-content{
     position: absolute;
@@ -218,11 +204,6 @@ input{
     display: block;
 }
 
-
-
-/* popup window */
-
-
 .popup{
     width: 25rem;
     border-radius: .35rem;
@@ -235,10 +216,11 @@ input{
     padding: .62rem 3.1rem 1.3rem;
     color:#333;
     position: absolute;
+    transition:  transform 0.4s, top 0.4s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition:  transform 0.4s, top 0.4s;
 }
+
 .open-popup{
     visibility: visible;
     top: 50%;
@@ -255,6 +237,7 @@ input{
 .popup h1{ 
     margin:1.9rem  0 .65rem;
 }
+
 .popup button{
     width: 18.5rem;
     margin-top: 1.9rem;
@@ -269,15 +252,10 @@ input{
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-
 .popup button:hover{
     color: white;
-    background: black;
-    
+    background: black;   
 }
-
-
-/*        footer        */
 
 .footer2{
     background-color: var(--black);
@@ -305,28 +283,23 @@ input{
 #ig:hover{
     background-color:  rgb(253, 57, 155);
     color: white;
-    /* border: 2px solid rgb(253, 57, 155); */
 }
 
 #fb:hover{
     background-color:  rgb(101, 101, 255);
     color: white;
-    /* border: 2px solid rgb(101, 101, 255); */
 }
 
 #tw:hover{
     background-color:  #00acee;
     color: white;
-    /* border: 2px solid #00acee; */
 }
 
 
 #yt:hover{
     background-color: red;
     color: white;
-    /* border: 2px solid #171515; */
 }
-
 
 #ln:hover{
     background-color: #0A66C2;
@@ -341,10 +314,7 @@ input{
     width: 42rem;
     border-top: 0.1px solid var(--light-bg);
     color: var(--light-black);
-
 }
-
-
 
 .header #ss{
     position: relative;
@@ -414,15 +384,13 @@ input{
     position: relative;
     top: 12rem;
     right: 5rem;
-
-
 }
+
 .wireless{
     font-size: 1.1rem;
     position: relative;
     top: 50rem;
     right: 5rem;
-
 }
 
 .phone{
@@ -430,7 +398,6 @@ input{
     position: relative;
     top: 88.5rem;
     right: 5rem;
-
 }
 
 .gym{
@@ -438,9 +405,7 @@ input{
     position: relative;
     top: 126.9rem;
     right: 5rem;
-
 }
-
 
 .main .container .shop .brand2{
     color: var(--light-black);
@@ -448,16 +413,15 @@ input{
     padding: .4rem 0 0 0;
 }
 
-
 .main .container .headset img{
     height: 18rem;
     position: relative;
     left: 0.7rem;
 }
+
 .main .container .hs img{
     height: 15.3rem;
 }
-
 
 .main .container .shop .b2{
     padding: 3.1rem 0 0 0;
@@ -491,13 +455,11 @@ input{
     padding: .5rem 0 0 0;
 }
 
-
 .main .container .clothes img{
     position: relative;
     left: 1.1rem;
     top: 1.5rem;
 }
-
 
 .info{
     display: flex;
@@ -523,8 +485,7 @@ input{
 
 .info p:hover{
     transform: translateX(5px);
-    color: mintcream;
-      
+    color: mintcream; 
 }
 
 .info1{
@@ -546,14 +507,10 @@ input{
     right: -3rem;
 } 
 
-
-
 .consumer-policy{
     position: relative;
     top: -6rem;
 }
-
-
 
 .address{
     position: relative;
@@ -572,80 +529,74 @@ pre{
 }
 
 pre:hover{
-      color: #fff;
+    color: #fff;
 }
 
 
 .main .container .shop button a{
-     text-decoration: none;
-     color: #fff;
+    text-decoration: none;
+    color: #fff;
 }
-
-
-
-
-
-
 
 @media(min-width:320px) {
     .header #ss{
-         width: 28.7rem; 
-         left: 0;
-     }
+        width: 28.7rem; 
+        left: 0;
+    }
 
-     .fa-magnifying-glass{
-             position: relative;
-             left: -5rem;
-     }
+    .fa-magnifying-glass{
+        position: relative;
+        left: -5rem;
+    }
 
-     .Login{
+    .Login{
         right: 1.5rem;
-     }
+    }
 
-     .regester{
+    .regester{
         right: 0rem;
-     }
+    }
 
-     .fa-cart-shopping{
+    .fa-cart-shopping{
         left: -3rem;
-     }
+    }
 
-     .header div{
+    .header div{
         left: 2.7rem;
-     }
+    }
 
-     .name1{
+    .name1{
         right: 3.5rem;
-     }
+    }
 
-  .main{
-    margin: -11rem 3rem -0rem;
-  }
+    .main{
+        margin: -11rem 3rem -0rem;
+    }
 
-  .main .container .shop{
-       margin: 7.8rem 0 -7.5rem 1rem;
-  }
+    .main .container .shop{
+        margin: 7.8rem 0 -7.5rem 1rem;
+    }
 
 
-     .main .container {
+    .main .container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(13.7rem,auto));
         column-gap: 10rem;
-     }
+    }
 
-     .wrapper{
-          display: flex;
-          min-width: 63rem;
-          min-height: 40rem;
-          overflow-x: auto;
-          column-gap: 1rem;
-          margin-left: -4.5rem;
+    .wrapper{
+        display: flex;
+        min-width: 63rem;
+        min-height: 40rem;
+        overflow-x: auto;
+        column-gap: 1rem;
+        margin-left: -4.5rem;
 
-     } 
+    } 
 
-     .wrap{
-         margin-top: -2rem;
-     }
+    .wrap{
+        margin-top: -2rem;
+    }
 
     .footer2 {
         width: 317.4%;
@@ -659,39 +610,36 @@ pre:hover{
         top: 5.5rem;
         left: 2rem;
     }
+
     .info{
-    gap: 6.2rem;
-    right: -38rem;
-    margin: -0.5rem -5rem;
+        gap: 6.2rem;
+        right: -38rem;
+        margin: -0.5rem -5rem;
     }
 
     .address{
-    right: 0;
+        right: 0;
     }
-
 }
-
 
 @media (min-width:375px){
     .header #ss{
         width: 37.7rem; 
         left: -1rem;
     }
-  .wrapper{
-    margin-left: -2rem;
-    min-width: 69rem;
-    
-  }
 
-  .main{
-    margin: -11rem 3rem -7rem;
-  }
+    .wrapper{
+        margin-left: -2rem;
+        min-width: 69rem;
+    }
 
-  .name1{
-    right: 1rem;
- }
+    .main{
+        margin: -11rem 3rem -7rem;
+    }
 
-
+    .name1{
+        right: 1rem;
+    }
 
     .footer2 .credit{
         margin: 6.7rem 0 0 8.5rem;
@@ -703,99 +651,89 @@ pre:hover{
     .info{
         gap: 8rem;
         right: -42.5rem;
-
     }
 
     .address{
-    right: 0;
+        right: 0;
     }
-
 }
 
-
-
-
 @media (min-width:425px){
+
     .header #ss {
         width: 45.7rem;
     }
 
     .fa-magnifying-glass{
         left: -6.5rem;
-}
+    }
 
-.wrapper{
-    display: flex;
-    min-width: 63rem;
-    min-height: 40rem;
-    overflow-x: auto;
-    column-gap: 1rem;
-    margin-left: -4.5rem;
+    .wrapper{
+        display: flex;
+        min-width: 63rem;
+        min-height: 40rem;
+        overflow-x: auto;
+        column-gap: 1rem;
+        margin-left: -4.5rem;
 
-} 
-
-
-.wrapper{
-    min-width: 79rem;
-    column-gap: 2.5rem;
-    margin-left: -1rem;
-
-}
-.name1{
-    right: 0;
- }
- 
- .footer2 .credit{
-    margin: 6.7rem 0 0 13.2rem;
-}
-
-.footer2 .share a{
-    left: .8rem;
-}
-.info{
-    gap: 10rem;
-    right: -47.5rem;
-}
-
-.address{
-right: 0;
-}
-
-}
+    } 
 
 
+    .wrapper{
+        min-width: 79rem;
+        column-gap: 2.5rem;
+        margin-left: -1rem;
 
+    }
+    .name1{
+        right: 0;
+    }
+    
+    .footer2 .credit{
+        margin: 6.7rem 0 0 13.2rem;
+    }
 
+    .footer2 .share a{
+        left: .8rem;
+    }
+    .info{
+        gap: 10rem;
+        right: -47.5rem;
+    }
 
-@media (min-width:768px) {
+    .address{
+        right: 0;
+    }
+
 }
   
 @media (min-width:1024px) {
+
     .header #ss {
         width: 45.7rem;
     }
+
     .main{
         margin: -11rem -2rem -7rem;
-      }
+    }
 
     .main .container{
         display: block;
     }
     
-
     .wrap{
         margin-top: 0;
     }
 
     .fa-cart-shopping{
         left: -2rem;
-     }
+    }
+
     .header div{
         left: 3.3rem;
-     }
+    }
     
-     
-     .footer2 {
+    .footer2 {
         width: 128.8%;
     }
 
@@ -807,8 +745,7 @@ right: 0;
         top: 5.5rem;
         left: -.2rem;
     }
-
-        
+    
     .info{
         gap: 12rem;
         right: -6px;
@@ -818,39 +755,35 @@ right: 0;
     .address{
         right: 1rem;
     }
-
 }
 
-
-
-
 @media (min-width:1440px){
+
      .header #ss{
         left: .1rem;
         width: 50rem;
-     }
+    }
      
-     .fa-magnifying-glass{
+    .fa-magnifying-glass{
         position: relative;
         left: -11rem;
-}
+    }
 
-  .Login{
-    right: 9.5rem;
- }
- .regester{
-    right: 11.5rem;
- }
+    .Login{
+        right: 9.5rem;
+    }
 
+    .regester{
+        right: 11.5rem;
+    }
 
- .header div{
-    left: -1rem;
- }
+    .header div{
+        left: -1rem;
+    }
 
-
- .fa-cart-shopping{
-    left: -11.5rem;
- }
+    .fa-cart-shopping{
+        left: -11.5rem;
+    }
 
     .main{
         margin: -11rem 3rem -9rem;
@@ -858,8 +791,7 @@ right: 0;
 
     .wrapper{
         min-width: 104rem;
-        column-gap: 4rem;
-       
+        column-gap: 4rem;      
     }
 
     .info {
@@ -872,27 +804,25 @@ right: 0;
     }
 }
 
-
-
-
 @media (min-width:1496px) {
+
     .wrapper{
         min-width: 90rem;
         column-gap: 2rem;
     }
+
     .main{
         margin: -11rem -2rem -15rem;
     }
 
-
-     .header #ss{
+    .header #ss{
         width: 45.7rem;
         left: -4rem;
     }
 
     .fa-magnifying-glass{
-            position: relative;
-            left: -11rem;
+        position: relative;
+        left: -11rem;
     }
 
     .Login{
@@ -902,77 +832,74 @@ right: 0;
     .regester{
        right: 9rem;
     }
+
     .header div{
         left: 3.65rem;
-     }
+    }
 
-     .fa-cart-shopping{
+    .fa-cart-shopping{
         left: -3.95rem;
-     }
+    }
     
-.info{
-    gap: 15rem;
-    right: 2.5rem;
-    margin: -0.5rem -1.5rem;
-}
+    .info{
+        gap: 15rem;
+        right: 2.5rem;
+        margin: -0.5rem -1.5rem;
+    }
 
+    .footer2 .share a {
+        left: 0.8rem;
+    }
 
-.footer2 .share a {
-    left: 0.8rem;
-}
-
-.footer2 .credit {
-    margin: 6.7rem 0 0 17.5rem;
-}
+    .footer2 .credit {
+        margin: 6.7rem 0 0 17.5rem;
+    }
 
    .main{
-    margin: -11rem 0rem -9rem -4rem;
-   }
+        margin: -11rem 0rem -9rem -4rem;
+    }
    
    .footer2{
-    width: 100.01%;
-   }
+        width: 100.01%;
+    }
 } 
-
-
 
 @media (min-width:2560px){
 
-.header #ss{
-     width: 55rem;
-     left: 29rem;
-}
+    .header #ss{
+        width: 55rem;
+        left: 29rem;
+    }
 
-.fa-magnifying-glass{
-    position: relative;
-    left: 11rem;
-}
+    .fa-magnifying-glass{
+        position: relative;
+        left: 11rem;
+    }
 
-.Login {
-    right: -5.5rem;
-}
-.regester {
-    right: 6rem;
-}
+    .Login {
+        right: -5.5rem;
+    }
+    .regester {
+        right: 6rem;
+    }
 
-.fa-cart-shopping{
-    left: -13.6rem;
- }
+    .fa-cart-shopping{
+        left: -13.6rem;
+    }
 
- .footer2 .credit {
-    margin: 6.7rem 0 0 44.8rem;
-}
+    .footer2 .credit {
+        margin: 6.7rem 0 0 44.8rem;
+    }
 
-.info {
-    gap: 19rem;
-    right: 30.5rem;
-    margin: -0.5rem -1.5rem;
+    .info {
+        gap: 19rem;
+        right: 30.5rem;
+        margin: -0.5rem -1.5rem;
+    }
 }
-}
-
 
 @media(min-width:2560px){
     .fa-cart-shopping{
         left: -15.4rem;
-     } 
+    } 
 }
